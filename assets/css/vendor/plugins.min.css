@@ -17519,6 +17519,7 @@ a.ui-button:active,
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
+  color: #000;
   border-radius: 5px;
   border: solid 1px #e8e8e8;
   box-sizing: border-box;
@@ -17543,7 +17544,7 @@ a.ui-button:active,
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  width: auto;
+  width: 100%;
 }
 .nice-select:hover {
   border-color: #dbdbdb;
@@ -17581,6 +17582,7 @@ a.ui-button:active,
 }
 .nice-select.open .list {
   opacity: 1;
+  position: absolute;
   pointer-events: auto;
   -webkit-transform: scale(1) translateY(0);
   -ms-transform: scale(1) translateY(0);
@@ -17633,6 +17635,8 @@ a.ui-button:active,
   pointer-events: none;
   position: absolute;
   top: 100%;
+  height: 150px;
+  width: 100%;
   left: 0;
   -webkit-transform-origin: 50% 0;
   -ms-transform-origin: 50% 0;
