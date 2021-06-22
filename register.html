@@ -74,7 +74,7 @@
                 <!--Main Navigation Start -->
                 <div class="main-navigation d-none d-lg-block">
                   <ul>
-                    <li class="menu-dropdown">
+                    <li class="menu-dropdown" >
                       <a href="index.html#">Crops </a>
                     </li>
                     <li class="menu-dropdown">
@@ -86,7 +86,7 @@
                     <li class="menu-dropdown">
                       <a href="checkout.html">Checkout </a>
                     </li>
-                    <li class="menu-dropdown">
+                    <li class="menu-dropdown" style="background-color: #ECFFDC;">
                       <a href="login.html">Login & Register </a>
                     </li>
 					<li class="menu-dropdown">
@@ -95,7 +95,7 @@
 					<li class="menu-dropdown">
                       <a href="groupbuying.html">Group Buying </a>
                     </li>
-                    <li class="menu-dropdown" style="background-color: #ECFFDC;">
+                    <li class="menu-dropdown">
                       <a href="about.html">About </a>
                     </li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -213,82 +213,174 @@
       </header>
       <!-- Header End -->
       
+      
       <!-- Breadcrumb Area start -->
       <section class="breadcrumb-area">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="breadcrumb-content">
-                <h1 class="breadcrumb-hrading">About Page</h1>
-                <ul class="breadcrumb-links">
-                  <li><a href="index.html">Home</a></li>
-                  <li>About</li>
-                </ul>
+                <!-- login area start -->
+      <div class="login-register-area mb-60px mt-53px">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 ml-auto mr-auto">
+              <div class="login-register-wrapper">
+                <div class="login-register-tab-list nav">
+                  <a href="login.html">
+                    <h4>login</h4>
+                  </a>
+                  
+				  <a class="active" data-toggle="tab" href="register.html#lg1">
+                    <h4>register</h4>
+                  </a>
+                </div>
+                <div class="tab-content">
+                  <div id="lg1" class="tab-pane active">
+                    <div class="login-form-container">
+                      <div class="login-register-form">
+                        <form action="assets/php/mail.php" method="post">
+                          <input
+                            type="text"
+                            name="first-name"
+                            placeholder="Firstname"
+                          />
+						  <input
+                            type="text"
+                            name="last-name"
+                            placeholder="Lastname"
+                          />
+						  
+						  <style>.awais{-webkit-tap-highlight-color: transparent;
+  background-color: #transparent !important;
+  color: #000;
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  width: 100%;}
+  
+  .awais .list{
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+  box-sizing: border-box;
+  margin-top: 4px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: scale(0.75) translateY(-21px);
+  -ms-transform: scale(0.75) translateY(-21px);
+  transform: scale(0.75) translateY(-21px);
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+    opacity 0.15s ease-out;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  z-index: 9;
+}
+  
+  </style>
+						  
+						  <select class="awais" 
+                            type="number"
+                            name="number_of_familymembers"
+                            placeholder="User Type?">
+							<option class="awais1">Farmer</option>
+							<option class="awais1">Costumer</option>
+							</select>
+							
+						  <input
+                            type="text"
+                            name="user-name"
+                            placeholder="UserName"
+                          />
+                          <input
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                          />
+                          <div class="button-box">
+                            <div class="login-toggle-btn">
+                              <input type="checkbox" />
+                              <a class="flote-none" href="javascript:void(0)"
+                                >Remember me</a
+                              >
+                              <!--<a href="login.html#">Forgot Password?</a>-->
+                            </div>
+                            <button type="submit"><span>Register</span></button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="lg2" class="tab-pane">
+                    <div class="login-form-container">
+                      <div class="login-register-form">
+                        <form action="assets/php/mail.php" method="post">
+                          <input
+                            type="text"
+                            name="user-name"
+                            placeholder="Username"
+                          />
+                          <input
+                            type="password"
+                            name="user-password"
+                            placeholder="Password"
+                          />
+                          <input
+                            name="user-email"
+                            placeholder="Email"
+                            type="email"
+                          />
+                          <div class="button-box">
+                            <button type="submit"><span>Register</span></button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- login area end -->
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Breadcrumb Area End -->
-
-      <!-- About Area Start -->
-      <section class="about-area">
-        <div class="container container-2">
-          <div class="row">
-            <div class="col-lg-6 mb-res-sm-50px">
-              <div class="about-left-image">
-                <img
-                  src="assets/images/feature-bg/1.jpg.png"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="about-content">
-                <div class="about-title">
-                  <h2>Welcome To E-Mandi</h2>
-                </div>
-                <p class="mb-30px">
-                  Description...
-                </p>
-                <p>
-                  
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-60px">
-            <div class="col-md-4 mb-res-sm-30px">
-              <div class="single-about">
-                <h4>Our Company</h4>
-                <p>
-                  Description...
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4 mb-res-sm-30px">
-              <div class="single-about">
-                <h4>Our Team</h4>
-                <p>
-                  Description...
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="single-about">
-                <h4>Testimonial</h4>
-                <p>
-                  Description...
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Area End -->
-
+     
        <!-- Footer Area start -->
       <footer class="footer-area">
         <div class="footer-top">

@@ -74,7 +74,7 @@
                 <!--Main Navigation Start -->
                 <div class="main-navigation d-none d-lg-block">
                   <ul>
-                    <li class="menu-dropdown">
+                    <li class="menu-dropdown" >
                       <a href="index.html#">Crops </a>
                     </li>
                     <li class="menu-dropdown">
@@ -89,13 +89,13 @@
                     <li class="menu-dropdown">
                       <a href="login.html">Login & Register </a>
                     </li>
-					<li class="menu-dropdown">
+					<li class="menu-dropdown"  style="background-color: #ECFFDC;">
                       <a href="rashancard.html">Rashan Card </a>
                     </li>
 					<li class="menu-dropdown">
                       <a href="groupbuying.html">Group Buying </a>
                     </li>
-                    <li class="menu-dropdown" style="background-color: #ECFFDC;">
+                    <li class="menu-dropdown">
                       <a href="about.html">About </a>
                     </li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -219,77 +219,103 @@
           <div class="row">
             <div class="col-md-12">
               <div class="breadcrumb-content">
-                <h1 class="breadcrumb-hrading">About Page</h1>
-                <ul class="breadcrumb-links">
-                  <li><a href="index.html">Home</a></li>
-                  <li>About</li>
-                </ul>
+                <!-- login area start -->
+      <div class="login-register-area mb-60px mt-53px">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 ml-auto mr-auto">
+              <div class="login-register-wrapper">
+                <div class="login-register-tab-list nav">
+                  
+                  <a class="active" data-toggle="tab" href="rashancard.html#lg1">
+                    <h4>Register For Rashan Card</h4>
+                  </a>
+                </div>
+                <div class="tab-content">
+                  <div id="lg1" class="tab-pane active">
+                    <div class="login-form-container">
+                      <div class="login-register-form">
+                        <form action="assets/php/mail.php" method="post">
+                          <input
+                            type="text"
+                            name="first-name"
+                            placeholder="Firstname"
+                          />
+						  <input
+                            type="text"
+                            name="last-name"
+                            placeholder="Lastname"
+                          />
+						  <input
+                            type="number"
+                            name="number_of_familymembers"
+                            placeholder="How many Family Members?"
+                          />
+						  <input
+                            type="text"
+                            name="household-name"
+                            placeholder="Household Name"
+                          />
+                          <input
+                            type="text"
+                            name="address"
+                            placeholder="Address"
+                          />
+                          <div class="button-box">
+                            <div class="login-toggle-btn">
+                              <input type="checkbox" />
+                              <a class="flote-none" href="javascript:void(0)"
+                                >Remember me</a
+                              >
+                              <!--<a href="login.html#">Forgot Password?</a>-->
+                            </div>
+                            <button type="submit"><span>Register</span></button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="lg2" class="tab-pane">
+                    <div class="login-form-container">
+                      <div class="login-register-form">
+                        <form action="assets/php/mail.php" method="post">
+                          <input
+                            type="text"
+                            name="user-name"
+                            placeholder="Username"
+                          />
+                          <input
+                            type="password"
+                            name="user-password"
+                            placeholder="Password"
+                          />
+                          <input
+                            name="user-email"
+                            placeholder="Email"
+                            type="email"
+                          />
+                          <div class="button-box">
+                            <button type="submit"><span>Register</span></button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- login area end -->
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Breadcrumb Area End -->
-
-      <!-- About Area Start -->
-      <section class="about-area">
-        <div class="container container-2">
-          <div class="row">
-            <div class="col-lg-6 mb-res-sm-50px">
-              <div class="about-left-image">
-                <img
-                  src="assets/images/feature-bg/1.jpg.png"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="about-content">
-                <div class="about-title">
-                  <h2>Welcome To E-Mandi</h2>
-                </div>
-                <p class="mb-30px">
-                  Description...
-                </p>
-                <p>
-                  
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-60px">
-            <div class="col-md-4 mb-res-sm-30px">
-              <div class="single-about">
-                <h4>Our Company</h4>
-                <p>
-                  Description...
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4 mb-res-sm-30px">
-              <div class="single-about">
-                <h4>Our Team</h4>
-                <p>
-                  Description...
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="single-about">
-                <h4>Testimonial</h4>
-                <p>
-                  Description...
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Area End -->
-
-       <!-- Footer Area start -->
+      
+      <!-- Footer Area start -->
       <footer class="footer-area">
         <div class="footer-top">
           <div class="container">
